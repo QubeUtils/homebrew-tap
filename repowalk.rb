@@ -5,21 +5,21 @@
 class Repowalk < Formula
   desc "A blazing-fast, interactive CLI tool that walks your repository and packs it into a Markdown document for LLMs."
   homepage "https://github.com/QubeUtils/repowalk"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/QubeUtils/repowalk/releases/download/v0.1.2/repowalk_Darwin_x86_64.tar.gz"
-      sha256 "f33d4aba66cf34eac5851bad7774eaba9a7f53a31433a40748403dc0e8fff5de"
+      url "https://github.com/QubeUtils/repowalk/releases/download/v0.1.3/repowalk_Darwin_x86_64.tar.gz"
+      sha256 "39a0da70f0d523e2b8e3cd06f996e1d81ce5c6790f57ee7ce1da53d4e4b6653f"
 
       define_method(:install) do
         bin.install "repowalk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/QubeUtils/repowalk/releases/download/v0.1.2/repowalk_Darwin_arm64.tar.gz"
-      sha256 "60bbd317c521ed8e1a6a28210cbd9a2cec409d0ce48f51011372b310a89c6407"
+      url "https://github.com/QubeUtils/repowalk/releases/download/v0.1.3/repowalk_Darwin_arm64.tar.gz"
+      sha256 "c36ac07225c9a571cb638509152b038da4aea2db8d619eaf460c1ad478eb79be"
 
       define_method(:install) do
         bin.install "repowalk"
@@ -29,15 +29,15 @@ class Repowalk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/QubeUtils/repowalk/releases/download/v0.1.2/repowalk_Linux_x86_64.tar.gz"
-      sha256 "aa1164d16263c38dfcce91868c9eb3caeaea952e4f92eb28a3c88bda8dfd7135"
+      url "https://github.com/QubeUtils/repowalk/releases/download/v0.1.3/repowalk_Linux_x86_64.tar.gz"
+      sha256 "a358d7f4684d420a826a9bb6568724262b511070e232c32fd758feac336768df"
       define_method(:install) do
         bin.install "repowalk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/QubeUtils/repowalk/releases/download/v0.1.2/repowalk_Linux_arm64.tar.gz"
-      sha256 "b7e1615d55c7d682310e29ef6c6a3da9f9d2bbad28bc0232ac62723f59e89110"
+      url "https://github.com/QubeUtils/repowalk/releases/download/v0.1.3/repowalk_Linux_arm64.tar.gz"
+      sha256 "a54740365937faed0c33cef1702bc6d351bacb6b92509294741be9f905c41584"
       define_method(:install) do
         bin.install "repowalk"
       end
