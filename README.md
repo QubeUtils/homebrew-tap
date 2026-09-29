@@ -26,6 +26,13 @@ Full featured Project Structure Analyzer & LLM Context Builder. ([Homepage](http
 brew install qubeutils/tap/golurk
 ```
 
+### `repowalk`
+A blazing-fast, interactive CLI tool that walks your repository and packs it into a Markdown document for LLMs. ([Homepage](https://github.com/QubeUtils/repowalk))
+
+```bash
+brew install qubeutils/tap/repowalk
+```
+
 ## Documentation
 
 For more information on Homebrew, see `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
