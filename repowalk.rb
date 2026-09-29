@@ -11,7 +11,7 @@ class Repowalk < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/QubeUtils/repowalk/releases/download/v0.1.2/repowalk_Darwin_x86_64.tar.gz"
-      sha256 "c67c02b238f30b7b5fe81aca10d4eeeeb6a00c28a8427365774b969e4bcaca96"
+      sha256 "f33d4aba66cf34eac5851bad7774eaba9a7f53a31433a40748403dc0e8fff5de"
 
       define_method(:install) do
         bin.install "repowalk"
@@ -19,7 +19,7 @@ class Repowalk < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/QubeUtils/repowalk/releases/download/v0.1.2/repowalk_Darwin_arm64.tar.gz"
-      sha256 "fc8eb7e5cccc3665b38b3264974ddd40fbc741b5dd43fa9c041e09115148530c"
+      sha256 "60bbd317c521ed8e1a6a28210cbd9a2cec409d0ce48f51011372b310a89c6407"
 
       define_method(:install) do
         bin.install "repowalk"
@@ -30,14 +30,14 @@ class Repowalk < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/QubeUtils/repowalk/releases/download/v0.1.2/repowalk_Linux_x86_64.tar.gz"
-      sha256 "d57614534044dc8dc01e2131dbec061b6b4dc43e457d6da11329d9db4c16a6ae"
+      sha256 "aa1164d16263c38dfcce91868c9eb3caeaea952e4f92eb28a3c88bda8dfd7135"
       define_method(:install) do
         bin.install "repowalk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/QubeUtils/repowalk/releases/download/v0.1.2/repowalk_Linux_arm64.tar.gz"
-      sha256 "e803763c352438500af428695c6637a23e3372775ecc8b2d228b076dbc8ce381"
+      sha256 "b7e1615d55c7d682310e29ef6c6a3da9f9d2bbad28bc0232ac62723f59e89110"
       define_method(:install) do
         bin.install "repowalk"
       end
